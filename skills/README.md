@@ -24,8 +24,8 @@ description: Use this skill when...
 Instructions for the agent.
 ```
 
-- `name` must match the folder name and use kebab-case.
-- `description` is how the agent decides whether to load the skill. State the situations that should trigger it, including relevant keywords.
+- `name` must match the folder name and use kebab-case (lowercase letters, numbers, and hyphens, up to 64 characters).
+- `description` is how the agent decides whether to load the skill. State the situations that should trigger it, including relevant keywords. Keep it under ~1024 characters as some agent tools enforce length limits.
 - Keep the body focused on actionable instructions. Prefer short sections and examples over long prose.
 - Reference supporting files by relative path so the whole folder works when copied.
 
@@ -34,6 +34,7 @@ Instructions for the agent.
 - One skill per folder, with a single responsibility.
 - Write for a general audience: avoid assumptions about a specific editor, shell or operating system unless the skill requires one.
 - Do not include secrets, credentials or personal data.
+- Ensure any skills adapted from third-party sources are compatible with the MIT license and attribute the source.
 - Check that the skill works when copied into a fresh project before opening a pull request.
 - Update the skills table in the root [README](../README.md) when adding a skill.
 

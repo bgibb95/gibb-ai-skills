@@ -12,7 +12,7 @@ A public collection of reusable AI skills and shareable AI instruction files. Th
 
 ## Using a skill
 
-Each skill is a folder containing a `SKILL.md` file. To use one, copy its folder into the skills directory your AI tool reads, for example `.claude/skills/` in a project or `~/.claude/skills/` for all projects with Claude Code. Check your tool's documentation for the exact location.
+Each skill is a folder containing a `SKILL.md` file. To use one, copy its folder into the skills directory your AI tool reads (for example, `.claude/skills/` in a project or `~/.claude/skills/` globally for Claude Code). Check your tool's documentation for the exact location.
 
 A skill's `description` frontmatter tells the agent when to load it, so keep the whole folder intact when copying.
 
@@ -35,7 +35,7 @@ Supporting files, such as references or templates, can live beside `SKILL.md` in
 
 1. Create a folder under `skills/` using a short kebab-case name, for example `skills/my-skill/`.
 2. Add a `SKILL.md` with `name` and `description` frontmatter. The description should say **when** to use the skill, not just what it does.
-3. Keep instructions tool-agnostic where possible, and never include secrets or credentials.
+3. Keep instructions tool-agnostic where possible, never include secrets or credentials, and ensure third-party material is MIT-compatible.
 4. Add the skill to the table in this README.
 5. Open a pull request. Titles and commit messages follow the [`pr-and-commit-title`](skills/pr-and-commit-title/SKILL.md) format.
 
