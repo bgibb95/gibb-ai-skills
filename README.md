@@ -8,6 +8,7 @@ A public collection of reusable AI skills and shareable AI instruction files. Th
 
 | Skill | Description |
 | --- | --- |
+| [`browser-ui-check`](skills/browser-ui-check/SKILL.md) | Screenshot, inspect and script a UI in headless Chromium with Playwright |
 | [`pr-and-commit-title`](skills/pr-and-commit-title/SKILL.md) | Format pull request titles and commit messages as `[EMOJI] [KEYWORD]: [Description]` |
 | [`pr-ui-screenshots`](skills/pr-ui-screenshots/SKILL.md) | Add before/after desktop and mobile screenshots to the PR description when making UI changes |
 
